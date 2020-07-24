@@ -73,7 +73,7 @@ namespace OrderTracker.Tests
       string description02 = "A butcher shop in town";
       Vendor newVendor1 = new Vendor(name01, description01);
       Vendor newVendor2 = new Vendor(name02, description02);
-      Vendor result = Vendor.Find(1);
+      Vendor result = Vendor.Find(2);
       Assert.AreEqual(newVendor2, result);
     }
   }
