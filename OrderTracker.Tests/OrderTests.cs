@@ -90,5 +90,18 @@ namespace OrderTracker.Tests
       string result = newOrder.Description;
       Assert.AreEqual(updatedDescription, result);
     }
+    [TestMethod]
+    public void SetPrice_UpdatePriceOfOrder_Int()
+    {
+      string title = "croissants";
+      string description = "catering order";
+      int price = 50;
+      string date = "jan 1";
+      Order newOrder = new Order(title, description, price, date);
+      int updatedPrice = 75;
+      newOrder.Price = updatedPrice;
+      int result = newOrder.Price;
+      Assert.AreEqual(updatedPrice, result);
+    }
   }
 }
