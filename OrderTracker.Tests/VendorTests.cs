@@ -60,7 +60,7 @@ namespace OrderTracker.Tests
       Vendor newVendor1 = new Vendor(name01, description01);
       Vendor newVendor2 = new Vendor(name02, description02);
       List<Vendor> newList = new List<Vendor> { newVendor1, newVendor2 };
-      List<Vendor> result = new List<Vendor> { newVendor1 };
+      List<Vendor> result = new List<Vendor> { newVendor1, newVendor2 };
       CollectionAssert.AreEqual(newList, result);
     }
   }
