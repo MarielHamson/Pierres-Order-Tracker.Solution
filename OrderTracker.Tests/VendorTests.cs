@@ -25,10 +25,8 @@ namespace OrderTracker.Tests
       string name = "Suzy's Boulangerie";
       string description = "A bakery downtown";
       Vendor newVendor = new Vendor(name, description);
-      string nameResult = "test name";
-      string descriptionResult = "test description";
+      string nameResult = newVendor.Name;
       Assert.AreEqual(name, nameResult);
-      Assert.AreEqual(description, descriptionResult);
     }
 
     [TestMethod]
@@ -37,7 +35,7 @@ namespace OrderTracker.Tests
       string name = "Suzy's Boulangerie";
       string description = "A bakery downtown";
       Vendor newVendor = new Vendor(name, description);
-      string descriptionResult = "test description";
+      string descriptionResult = newVendor.Description;
       Assert.AreEqual(description, descriptionResult);
 
 
