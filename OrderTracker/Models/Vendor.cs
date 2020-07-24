@@ -21,6 +21,10 @@ namespace OrderTracker.Models
     {
       return _instances[searchId - 1];
     }
+    public static List<Vendor> GetAll()
+    {
+      return _instances;
+    }
 
     public static void ClearAll()
     {
