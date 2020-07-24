@@ -103,5 +103,18 @@ namespace OrderTracker.Tests
       int result = newOrder.Price;
       Assert.AreEqual(updatedPrice, result);
     }
+    [TestMethod]
+    public void SetDate_UpdateDateOfOrder_String()
+    {
+      string title = "croissants";
+      string description = "catering order";
+      int price = 50;
+      string date = "jan 1";
+      Order newOrder = new Order(title, description, price, date);
+      string updatedDate = "Aug 13";
+      newOrder.Date = updatedDate;
+      string result = newOrder.Date;
+      Assert.AreEqual(updatedDate, result);
+    }
   }
 }
