@@ -6,7 +6,7 @@ namespace OrderTracker.Controllers
 {
   public class OrdersController : Controller
   {
-    [HttpGet("/VendorsController/{vendorId}/orders/new")]
+    [HttpGet("/vendors/{vendorId}/orders/new")]
     public ActionResult New(int vendorId)
     {
       Vendor vendor = Vendor.Find(vendorId);
