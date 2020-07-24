@@ -37,9 +37,16 @@ namespace OrderTracker.Tests
       Vendor newVendor = new Vendor(name, description);
       string descriptionResult = newVendor.Description;
       Assert.AreEqual(description, descriptionResult);
+    }
 
-
-
+    [TestMethod]
+    public void GetId_ReturnsVendorId_Int()
+    {
+      string name = "Suzy's Boulangerie";
+      string description = "A bakery downtown";
+      Vendor newVendor = new Vendor(name, description);
+      int result = newVendor.Id;
+      Assert.AreEqual(result, 2);
     }
   }
 }
