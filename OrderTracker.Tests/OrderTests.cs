@@ -138,7 +138,7 @@ namespace OrderTracker.Tests
       Order newOrder1 = new Order(title01, description01, price01, date01);
       Order newOrder2 = new Order(title02, description02, price02, date02);
       List<Order> newOrder = new List<Order> { newOrder1, newOrder2 };
-      List<Order> result = new List<Order> { newOrder1 };
+      List<Order> result = new List<Order> { newOrder1, newOrder2 };
       CollectionAssert.AreEqual(newOrder, result);
     }
   }
