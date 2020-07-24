@@ -64,5 +64,18 @@ namespace OrderTracker.Tests
       string result = newOrder.Date;
       Assert.AreEqual(date, result);
     }
+    [TestMethod]
+    public void SetTitle_UpdateTitleOfOrder_String()
+    {
+      string title = "croissants";
+      string description = "catering order";
+      int price = 50;
+      string date = "jan 1";
+      Order newOrder = new Order(title, description, price, date);
+      string updatedTitle = "sponge cakes";
+      newOrder.Title = updatedTitle;
+      string result = newOrder.Title;
+      Assert.AreEqual(updatedTitle, result);
+    }
   }
 }
