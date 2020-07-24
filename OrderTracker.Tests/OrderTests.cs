@@ -166,7 +166,7 @@ namespace OrderTracker.Tests
       string date02 = "april 1";
       Order newOrder1 = new Order(title01, description01, price01, date01);
       Order newOrder2 = new Order(title02, description02, price02, date02);
-      Order result = Order.Find(1);
+      Order result = Order.Find(2);
       Assert.AreEqual(newOrder2, result);
     }
 
