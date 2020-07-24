@@ -31,5 +31,16 @@ namespace OrderTracker.Tests
       string result = newOrder.Title;
       Assert.AreEqual(title, result);
     }
+    [TestMethod]
+    public void GetDescription_ReturnsDescription_String()
+    {
+      string title = "croissants";
+      string description = "catering order";
+      int price = 50;
+      string date = "jan 1";
+      Order newOrder = new Order(title, description, price, date);
+      string result = newOrder.Description;
+      Assert.AreEqual(description, result);
+    }
   }
 }
