@@ -124,5 +124,22 @@ namespace OrderTracker.Tests
       List<Order> result = Order.GetAll();
       CollectionAssert.AreEqual(newOrder, result);
     }
+    [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      string title01 = "croissants";
+      string description01 = "catering order";
+      int price01 = 50;
+      string date01 = "jan 1";
+      string title02 = "shortbread";
+      string description02 = "british bake off";
+      int price02 = 25;
+      string date02 = "april 1";
+      Order newOrder1 = new Order(title01, description01, price01, date01);
+      Order newOrder2 = new Order(title02, description02, price02, date02);
+      List<Order> newOrder = new List<Order> { newOrder1, newOrder2 };
+      List<Order> result = new List<Order> { newOrder1 };
+      CollectionAssert.AreEqual(newOrder, result);
+    }
   }
 }
