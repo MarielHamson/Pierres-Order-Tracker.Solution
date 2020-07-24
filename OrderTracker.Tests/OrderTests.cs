@@ -116,5 +116,13 @@ namespace OrderTracker.Tests
       string result = newOrder.Date;
       Assert.AreEqual(updatedDate, result);
     }
+
+    [TestMethod]
+    public void GetAll_ReturnsEmptyList_OrderList()
+    {
+      List<Order> newOrder = new List<Order> { };
+      List<Order> result = Order.GetAll();
+      CollectionAssert.AreEqual(newOrder, result);
+    }
   }
 }
