@@ -21,7 +21,11 @@ namespace OrderTracker.Models
     {
       return _instances[searchId - 1];
     }
-    // properties, methods, etc. will go here.
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
+    }
 
   }
 }
