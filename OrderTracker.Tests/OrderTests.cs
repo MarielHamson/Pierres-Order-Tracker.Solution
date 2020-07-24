@@ -150,7 +150,7 @@ namespace OrderTracker.Tests
       string date = "jan 1";
       Order newOrder = new Order(title, description, price, date);
       int result = newOrder.Id;
-      Assert.AreEqual(2, result);
+      Assert.AreEqual(1, result);
     }
   }
 }
