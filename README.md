@@ -24,7 +24,7 @@ _This app allows the user to track the vendors that are being used by a bakery b
 - _Clone or download this repository located at www.github.com/MarielHamson/Pierres-Order-Tracker.Solution_
 - _Run \$ `dotnet restore` to download all dev dependencies_
 - _Run \$ `dotnet build` to create project_
-- _Run \$ `dotnet build` to initiate local server_
+- _Run \$ `dotnet run` to initiate local server_
 - _Open local server to view app in browser_
 
 ## Known Bugs
